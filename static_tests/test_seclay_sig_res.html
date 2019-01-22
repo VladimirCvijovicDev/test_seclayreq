@@ -41,5 +41,11 @@ woOXeF6xhaCm7oYL6Q9fPi1zCQ==</dsig:X509Certificate></dsig:X509Data></dsig:KeyInf
         </textarea>
       <input type="submit" value="Continue"/>
     </form>
+    <script>
+        var url = new URL(window.location);
+        var client_response = url.searchParams.get("client_response");
+        alert(client_response);
+        //document.getElementsByName('XMLRequest')[0].value = client_response;
+    </script>
   </body>
 </html>

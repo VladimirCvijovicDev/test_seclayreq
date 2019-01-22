@@ -53,7 +53,7 @@ function submit_to_client(params){
             if(http.status == 200){
                 //success response
                 alert("success request: " + http.responseText);
-                document.location = '';
+                document.location = 'test_seclay_sig_res.html?client_response=' + http.responseText;
             }else {
                 alert('failed');
             }
