@@ -26,7 +26,7 @@ class RequestHandler(BaseHTTPRequestHandler):
     
     def _set_response(self):
         self.send_response(200)
-        #self.send_header("Access-Control-Allow-Origin", "http://localhost")
+        self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header('Content-type', 'text/html')
         self.end_headers()
 
